@@ -1,7 +1,7 @@
 import React from "react";
 import { motion } from "framer-motion";
 import Link from "next/link";
-import { ClockIcon, CheckCircleIcon, AcademicCapIcon } from "@heroicons/react/24/solid";
+import { CheckCircleIcon, AcademicCapIcon } from "@heroicons/react/24/solid";
 
 const features = [
   "2 Live Classes Per Subject",

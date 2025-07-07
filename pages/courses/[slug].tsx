@@ -2,6 +2,7 @@
 import { courses } from "@/data/course";
 import Head from "next/head";
 import { motion } from "framer-motion";
+import Link from "next/link";
 
 export async function getStaticPaths() {
   const paths = courses.map((course) => ({
@@ -99,12 +100,12 @@ const CoursePage = ({ course }) => {
                 <p className="text-sm text-gray-500 line-through">{course.originalPrice}</p>
               </div>
 
-              <a
+              <Link
                 href="/#inquiry"
                 className="mt-6 inline-block bg-gradient-to-r from-purple-600 to-pink-500 text-white font-semibold py-3 px-6 rounded-lg hover:scale-105 transition-transform duration-300"
               >
                 🚀 Enroll Now / Get a Call Back
-              </a>
+              </Link>
             </div>
           </motion.div>
         </div>
